@@ -10,7 +10,9 @@ app.get('/api', (req, res) => {
     const track = 'Backend';
 
     // Getting the current day and time in UTC
-    const currentUtcTime = new Date().toISOString();
+
+    const currentUTC = new Date();
+    currentUTC.setMinutes(currentUTC.getMinutes() - 2, currentUTC.getSeconds(), 0);
     const formattedUtcTime = currentUtcTime.split('.')[0] + 'Z';
     const validatedUtcTime = validateUtcTime(currentUtcTime);
 
