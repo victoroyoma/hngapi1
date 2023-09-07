@@ -15,10 +15,10 @@ app.get('/api', (req, res) => {
     const validatedUtcTime = validateUtcTime(currentUtcTime);
 
     //GitHub URL of the file being run
-    const githubFileUrl = 'https://github.com/victoroyoma/main\index.js'; 
+    const githubFileUrl = 'https://github.com/victoroyoma/hngapi1/blob/main/main/index.js'; 
 
     //GitHub URL of the full source code repository
-    const githubRepoUrl = 'https://github.com/victoroyoma/task1';
+    const githubRepoUrl = 'https://github.com/victoroyoma/hngapi1';
 
     const response = {
       slack_name: slackName,
